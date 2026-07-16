@@ -91,3 +91,4 @@ function escapeHtml(str) {
 }
 
 loadProjects();
+
