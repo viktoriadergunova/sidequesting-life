@@ -47,9 +47,11 @@ code {
 }
 
 .avatar-wrap {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: 28px;
 }
 
 .avatar {
@@ -62,29 +64,24 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .doodle-arrow {
-  position: absolute;
-  left: 94px;
-  top: 10px;
-  width: 68px;
-  height: 53px;
+  width: 56px;
+  height: 34px;
   color: var(--accent);
-  overflow: visible;
+  flex-shrink: 0;
+  margin-bottom: 20px;
 }
 
 .doodle-caption {
-  position: absolute;
-  left: 126px;
-  top: 6px;
-  width: 95px;
-  text-align: left;
   font-family: 'Caveat', cursive;
-  font-size: 20px;
+  font-size: 24px;
   color: var(--accent);
   line-height: 1.1;
   transform: rotate(-3deg);
+  white-space: nowrap;
 }
 
 .avatar img {
