@@ -47,16 +47,14 @@ code {
 }
 
 .avatar-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-  margin-bottom: 28px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
 }
 
 .avatar {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: var(--accent-soft);
   border: 1px solid var(--rule);
@@ -64,24 +62,27 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-}
-
-.doodle-arrow {
-  width: 56px;
-  height: 34px;
-  color: var(--accent);
-  flex-shrink: 0;
-  margin-bottom: 20px;
 }
 
 .doodle-caption {
+  position: absolute;
+  left: 208px;
+  top: 24px;
   font-family: 'Caveat', cursive;
-  font-size: 24px;
+  font-size: 30px;
   color: var(--accent);
   line-height: 1.1;
   transform: rotate(-3deg);
   white-space: nowrap;
+}
+
+.doodle-arrow {
+  position: absolute;
+  left: 208px;
+  top: 62px;
+  width: 72px;
+  height: 48px;
+  color: var(--accent);
 }
 
 .avatar img {
