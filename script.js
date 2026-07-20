@@ -57,11 +57,18 @@ function renderEntry(entry) {
     ? `<a class="log-link" href="${entry.link}" target="_blank" rel="noopener">view</a>`
     : '';
 
+  const partLabel = entry.part
+    ? `<span class="log-part">PART ${escapeHtml(String(entry.part))}</span>`
+    : '';
+
   return `
     <div class="log-entry">
       <div class="line"></div>
       <div class="log-body">
-        <div class="log-date">${formatDate(entry.date)}</div>
+        <div class="log-meta">
+          <span class="log-date">${formatDate(entry.date)}</span>
+          ${partLabel}
+        </div>
         ${paragraphs}
         ${image}
         ${link}
